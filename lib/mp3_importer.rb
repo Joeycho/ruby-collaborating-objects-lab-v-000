@@ -7,8 +7,9 @@ def initialize(path)
 end
 
 def files
-  files = Dir.entries(self.path,'.mp3')
   binding.pry
+  files = Dir.entries(self.path,'.mp3')
+  
 end
 
 def import
