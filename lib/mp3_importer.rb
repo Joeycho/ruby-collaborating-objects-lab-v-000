@@ -8,7 +8,7 @@ end
 
 def files
   binding.pry
-  files = Dir.entries(self.path,'.mp3')
+  files = Dir.entries(self.path,'mp3')
 
 end
 
