@@ -15,9 +15,8 @@ class Song
 
     def self.new_by_filename(filename)
       sfilename = filename[0..-5].split(" - ")
+      Artist.find_or_create_by_name(sfilename[0])  
       song = self.new(sfilename[1])
-      sfilename[0]
-      Artist.find_or_create_by_name(sfilename[0])
     end
 
     def artist_name
