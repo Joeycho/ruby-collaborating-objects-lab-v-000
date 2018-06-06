@@ -3,15 +3,14 @@ class MP3Importer
 
 def initialize(path)
   @path = path
-  binding.pry
 end
 
 def files
-  
+  Dir.entries(self.path,'.mp3')
 end
 
 def import
-  
+
 end
 
 end
