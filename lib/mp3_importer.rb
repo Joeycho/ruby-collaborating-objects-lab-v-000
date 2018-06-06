@@ -15,7 +15,7 @@ end
 
 def import
   self.files.map do
-    |song| Song.new_by_filename(song)
+    |filename| Song.new_by_filename(filename)
   end
 end
 
