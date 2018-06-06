@@ -20,6 +20,7 @@ class Song
       song = self.new(sfilename[1])
       song.artist = artist
       artist.add_song(song)
+      song
     end
 
     def artist_name
