@@ -7,9 +7,10 @@ def initialize(path)
 end
 
 def files
-  binding.pry
-  files = Dir.entries(self.path,'mp3')
-
+  files = Dir.entries(self.path)
+  files.select do
+    |file| file.end_with?('.mp3')
+  end
 end
 
 def import
