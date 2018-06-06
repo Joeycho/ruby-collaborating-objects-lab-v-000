@@ -18,6 +18,7 @@ class Song
     #  binding.pry
       artist = Artist.find_or_create_by_name(sfilename[0])
       song = self.new(sfilename[1])
+      binding.pry
       artist.add_song(song)
       song
     end
