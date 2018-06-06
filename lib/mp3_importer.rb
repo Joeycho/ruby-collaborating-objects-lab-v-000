@@ -14,7 +14,9 @@ def files
 end
 
 def import
-
+  self.files.map do
+    |song| Song.new_by_filename(song)
+  end
 end
 
 end
