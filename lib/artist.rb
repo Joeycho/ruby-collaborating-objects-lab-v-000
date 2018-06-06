@@ -31,4 +31,5 @@ class Artist
   def add_song(song)
     Song.all << song
   end
+  
 end
