@@ -9,6 +9,7 @@ class Song
     end
 
     def self.all
+      binding.pry
       @@all
     end
 
